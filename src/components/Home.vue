@@ -26,7 +26,7 @@
             </template>
 
             <!-- 二级菜单 -->
-            <el-menu-item :index="'/'+item.path" v-for="subItem in item.children" :key="subItem.id" @click="saveNavState('/'+item.path)">
+            <el-menu-item :index="'/'+subItem.path" v-for="subItem in item.children" :key="subItem.id" @click="saveNavState('/'+item.path)">
               <template slot="title">
                 <!-- 图标 -->
                 <i class="el-icon-menu"></i>
